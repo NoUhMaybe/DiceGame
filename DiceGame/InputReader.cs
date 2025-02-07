@@ -20,7 +20,7 @@
             Console.WriteLine(message);
             var userInput = Console.ReadLine();
             bool TryParse = int.TryParse(userInput, out int result);
-            if (TryParse && result > floor && result < ceiling)
+            if (TryParse && result > floor - 1 && result < ceiling + 1)
             {
                 return result;
             }
